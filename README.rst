@@ -60,11 +60,11 @@ prompt. This is very useful for simple scripted operations where
 
     def otherfunc():
         # yes, it's on purpose
-        tinyprompt.color_print('red string', tinyprompt.RED)
+        tinyprompt.color_print('red string', tinyprompt.GREEN)
         tinyprompt.color_print('yellow string', tinyprompt.BLUE)
         tinyprompt.color_print('green string', tinyprompt.GRAY)
-        tinyprompt.color_print('blue string', tinyprompt.GREEN)
-        tinyprompt.color_print('gray  string', tinyprompt.YELLOW)
+        tinyprompt.color_print('blue string', tinyprompt.RED)
+        tinyprompt.color_print('gray string', tinyprompt.YELLOW)
 
 
     def main():

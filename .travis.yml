@@ -10,4 +10,4 @@ matrix:
       sudo: required
 cache: pip
 install: pip install -e '.[development]'
-script: tox -e py  # invoke with calling python
+script: ./test.sh

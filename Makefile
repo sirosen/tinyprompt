@@ -10,10 +10,7 @@ autoformat: .venv
 	if [ -f .venv/bin/black ]; then .venv/bin/black tinyprompt/ setup.py; fi
 
 test: .venv
-	.venv/bin/flake8
-	.venv/bin/isort --recursive --check-only tinyprompt/ setup.py
-	if [ -f .venv/bin/black ]; then .venv/bin/black --check  tinyprompt/ setup.py; fi
-	.venv/bin/pytest -v --cov=tinyprompt
+	./test.sh
 
 upload: .venv
 	rm -rf dist/*
