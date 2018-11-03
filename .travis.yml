@@ -1,0 +1,13 @@
+sudo: false
+dist: xenial
+language: python
+matrix:
+  include:
+    - python: "3.5"
+    - python: "3.6"
+    - python: "3.7"
+      # hack py37 to use a different Travis worker type
+      sudo: required
+cache: pip
+install: pip install -e '.[development]'
+script: tox -e py  # invoke with calling python
